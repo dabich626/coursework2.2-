@@ -13,6 +13,23 @@ public class ExamController {
 
     private final ExamService examService;
 
-    @GetMapping()
+    @GetMapping(path = “/exam/java/add?question=QuestionText&answer=QuestionAnswer”)
+    public String addQuestion(){
+
+        return QuestionService.add(addQuestion());
+    }
+
+    @GetMapping(path = “/exam/java/remove?question=QuestionText&answer=QuestionAnswer”)
+    public String removeQuestion(){
+
+        return QuestionService.Questions.remove(index);
+    }
+
+    @GetMapping(path =  “/exam/java”)
+    public String getAllQuestions(){
+
+        return QuestionService.getAllQue(Question);
+    }
+
 
 }
