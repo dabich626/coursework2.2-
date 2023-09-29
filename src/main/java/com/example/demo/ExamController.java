@@ -13,22 +13,21 @@ public class ExamController {
 
     private final ExamService examService;
 
-    @GetMapping(path = “/exam/java/add?question=QuestionText&answer=QuestionAnswer”)
-    public String addQuestion(){
-
-        return QuestionService.add(addQuestion());
+    @GetMapping(path = “/exam/java/add”)
+    public String addQuestion(@RequestParam String question, @RequestParam String answer){
+        return QuestionService.add(addQuestion(question, answer));
     }
+    @GetMapping(path = “/exam/java/remove”)
 
-    @GetMapping(path = “/exam/java/remove?question=QuestionText&answer=QuestionAnswer”)
-    public String removeQuestion(){
+    public String removeQuestion(@RequestParam String question, @RequestParam String answer){
 
-        return QuestionService.Questions.remove(index);
+        return QuestionService.Questions.remove(removeQuestion(question, answer));
     }
 
     @GetMapping(path =  “/exam/java”)
     public String getAllQuestions(){
 
-        return QuestionService.getAllQue(Question);
+        return QuestionService.getAllQue(getAllQuestions());
     }
 
 

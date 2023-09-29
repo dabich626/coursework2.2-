@@ -7,8 +7,9 @@ public interface QuestionService  {
 
 
 
-    List<String> Questions = new ArrayList<String>();
-    List<String> Answers = new ArrayList<>();
+    List<Questions> = new ArrayList<>();
+    List<Answers>  = new ArrayList<>();
+
 
 
 

@@ -5,8 +5,18 @@ import java.util.Collection;
 public interface ExaminerService {
 
 
+    public static  getAllQuestions(int amount){
 
-public static void getAllQuestionsList(int amount){
+        for (int i = 0; i <= question.length; i++) {
+
+            return question[i];
+        }
+
+
+    }
+
+
+public static void getQuestionsList(int amount){
 
     Question question = new Question();
 
@@ -17,4 +27,6 @@ public static void getAllQuestionsList(int amount){
         throw new NotTheRightAmountException();
     }
 }
+
+
 }
