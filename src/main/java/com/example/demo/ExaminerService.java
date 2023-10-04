@@ -1,11 +1,12 @@
 package com.example.demo;
 
 import java.util.Collection;
+import java.util.HashSet;
 
 public interface ExaminerService {
 
 
-    public static  getAllQuestions(int amount){
+    public void  getAll(int amount){
 
         for (int i = 0; i <= question.length; i++) {
 
@@ -16,11 +17,10 @@ public interface ExaminerService {
     }
 
 
-public static void getQuestionsList(int amount){
+public static void getallQuestions(int amount){
 
     Question question = new Question();
 
-    Collection<Question> getQuestions(amount);
 
     if (amount > getQuestions.size()){
 
