@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class NotTheRightAmountException extends Exception{
+public class NotTheRightAmountException  extends Exception{
 
 
 }

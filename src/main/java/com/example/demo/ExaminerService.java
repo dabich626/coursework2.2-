@@ -22,7 +22,7 @@ public static void getallQuestions(int amount){
     Question question = new Question();
 
 
-    if (amount > getQuestions.size()){
+    if (amount >  getQuestions.size()){
 
         throw new NotTheRightAmountException();
     }
